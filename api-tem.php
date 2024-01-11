@@ -9,6 +9,10 @@
 El identificador del sensor es: <?php echo $id_sensor ; ?> 
 <br>
 La lectura de temperatura es: <?php echo $temperatura ; ?>
+<br>
+<a href="form-tem.html">
+    <button>Regresar</button>
+  </a> 
 
 </body>
 </html>
