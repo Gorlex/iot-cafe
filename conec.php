@@ -1,6 +1,6 @@
 <?php
 
-function conectar(){
+
 
     $host = "localhost";
     $user ="root";
@@ -8,7 +8,7 @@ function conectar(){
     $bd ="medidas_ambiente";
     $con=mysqli_connect($host,$user,$pass);
     mysqli_select_db($con,$bd);
-    return $con;
+ 
 
     if (!$con) {
         echo "Error: No se pudo conectar a MySQL. Error " . mysqli_connect_errno() . " : ". mysqli_connect_error() . PHP_EOL;
@@ -16,8 +16,8 @@ function conectar(){
     }
     else {echo "Conexión realizada correctamente";}
 
-}
-echo conectar();
+
+
 
 
 ?>
