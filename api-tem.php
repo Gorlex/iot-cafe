@@ -25,6 +25,8 @@ $insertar = "INSERT INTO medidas_ambiente (sensor, medida) VALUES(
     '$temperatura')";
 $query = mysqli_query($con, $insertar);
 
+echo "datos insertados correctamente";
+
 if ($query) {
     header('location: api-tem.php'); 
     exit();
