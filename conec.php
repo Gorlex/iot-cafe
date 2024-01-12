@@ -17,7 +17,7 @@ function conectar(){
     else {echo "Conexión realizada correctamente";}
 
 }
-conectar();
+echo conectar();
 
 
 ?>
