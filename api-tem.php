@@ -17,14 +17,17 @@ La lectura de temperatura es: <?php echo $temperatura ; ?>
 <!-- Realizar envio de datos a la base de datos -->
 <?php
 
-include("conec.php");
+include("envio-bd.php");
 
-$insertar = "INSERT INTO temperatura (sensor, medida) VALUES('$id_sensor', '$temperatura')";
+$tabla = "temperatura";
+envio_bd ($tabla, $id_sensor, $temperatura)
+
+//$insertar = "INSERT INTO temperatura (sensor, medida) VALUES('$id_sensor', '$temperatura')";
 
 
-if ((($query = mysqli_query($con, $insertar))) === false) { 
-    die(mysqli_error($con));
-}
+//if ((($query = mysqli_query($con, $insertar))) === false) { 
+  //  die(mysqli_error($con));
+//}
 
 ?>
 <!-- Termina envio de datos a la base de datos -->
