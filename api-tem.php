@@ -14,7 +14,6 @@ La lectura de temperatura es: <?php echo $temperatura ; ?>
     <button>Regresar</button>
   </a> 
 
-</body>
 <!-- Realizar envio de datos a la base de datos -->
 <?php
 
@@ -38,6 +37,14 @@ if ($query) {
 
 ?>
 <!-- Termina envio de datos a la base de datos -->
+
+
+
+
+
+
+</body>
+
 
 
 
