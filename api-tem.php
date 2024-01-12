@@ -20,7 +20,7 @@ La lectura de temperatura es: <?php echo $temperatura ; ?>
 include("conec.php");
 
 $insertar = "INSERT INTO temperatura (sensor, medida) VALUES('$id_sensor', '$temperatura')";
-$query = mysqli_query($con, $insertar);
+
 
 if ((($query = mysqli_query($con, $insertar))) === false) { 
     die(mysqli_error($con));
