@@ -10,7 +10,7 @@ function conectar(){
     mysqli_select_db($con,$bd);
     return $con;
 
-    if (!$conn) {
+    if (!$con) {
         echo "Error: No se pudo conectar a MySQL. Error " . mysqli_connect_errno() . " : ". mysqli_connect_error() . PHP_EOL;
         die;
     }
