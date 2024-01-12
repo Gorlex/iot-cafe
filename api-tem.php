@@ -13,27 +13,18 @@ La lectura de temperatura es: <?php echo $temperatura ; ?>
 <a href="form-tem.html">
     <button>Regresar</button>
   </a> 
-
+  <br>
 <!-- Realizar envio de datos a la base de datos -->
 <?php
 
 include("conec.php");
 
-$insertar = "INSERT INTO medidas_ambiente (sensor, medida) VALUES(
-    '$id_sensor', 
-    '$temperatura')";
+$insertar = "INSERT INTO medidas_ambiente (sensor, medida) VALUES('$id_sensor', '$temperatura')";
 $query = mysqli_query($con, $insertar);
 
-echo "datos insertados correctamente";
-
-if ($query) {
-    header('location: api-tem.php'); 
-    exit();
-    
-    }
-    else {
-
-    }
+if ((($query = mysqli_query($con, $insertar))) === false) { 
+    die(mysqli_error($con));
+}
 
 ?>
 <!-- Termina envio de datos a la base de datos -->
