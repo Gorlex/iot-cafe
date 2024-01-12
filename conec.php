@@ -15,7 +15,7 @@
         die;
     }
     else {
-        echo "conectado correctamente a la BD";
+        //echo "conectado correctamente a la BD";
     }
 
 

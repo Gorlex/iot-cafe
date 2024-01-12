@@ -20,7 +20,7 @@ La lectura de temperatura es: <?php echo $temperatura ; ?>
 include("envio-bd.php");
 
 
-envio($id_sensor, $temperatura);
+envio($id_sensor, $temperatura, $con);
 
 //$insertar = "INSERT INTO temperatura (sensor, medida) VALUES('$id_sensor', '$temperatura')";
 
