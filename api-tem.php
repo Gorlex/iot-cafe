@@ -16,7 +16,7 @@ La lectura de temperatura es: <?php echo $temperatura ; ?>
   <br>
 <!-- Realizar envio de datos a la base de datos -->
 <?php
-    include("conec.php");
+    
     include("envio-bd.php");
 
 
