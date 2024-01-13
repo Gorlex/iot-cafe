@@ -1,8 +1,8 @@
 <html>
 <!-- Recibe la variable del formulario -->
 
-<?php $id_sensor = $_POST["id_sensor"]; ?>
-<?php $temperatura = $_POST["temperatura"]; ?>
+<?php $id_sensor = $_GET["id_sensor"]; ?>
+<?php $temperatura = $_GET["temperatura"]; ?>
 <!-- Cierra recepción de la variable del formulario -->
 <body>
 
@@ -21,14 +21,6 @@ La lectura de temperatura es: <?php echo $temperatura ; ?>
 
 $tabla = "temperatura";
 envio_db($tabla, $id_sensor, $temperatura);
-
-//$insertar = "INSERT INTO temperatura (sensor, medida) VALUES('$id_sensor', '$temperatura')";
-
-
-//if ((($query = mysqli_query($con, $insertar))) === false) { 
-  //  die(mysqli_error($con));
-//}
-
 ?>
 <!-- Termina envio de datos a la base de datos -->
 
