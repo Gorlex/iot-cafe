@@ -3,7 +3,7 @@
     include("conec.php");
         
     $busqueda = $_GET['busqueda'];
-    $tabla== $_GET['tabla'];
+    $tabla= $_GET['tabla'];
 echo $busqueda;
 echo $tabla;
 
