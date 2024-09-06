@@ -20,7 +20,19 @@
 
     $con->close();
   
-
-
-
+ 
 ?>
+<html>
+     <head>
+         <title>wordle PPY</title>
+         
+         <script src="script.js" defer></script>
+         <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+         
+     </head>
+     <body>
+         <h1>Regresar</h1>
+        
+         <button onclick="history.back();">VOLVER</button> 
+     </body>
+</html> 
