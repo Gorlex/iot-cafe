@@ -10,7 +10,7 @@ El identificador del sensor es: <?php echo $id_sensor ; ?>
 <br>
 La lectura de humedad es: <?php echo $humedad ; ?>
 <br>
-<a href="form-tem.html">
+<a href="form-hum.html">
     <button>Regresar</button>
   </a> 
   <br>
