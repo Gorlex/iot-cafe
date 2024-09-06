@@ -12,11 +12,11 @@
     // Mostrar los resultados
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "<b>SENSOR</b>" . " " . "<b>MEDIDA</b>" . "<br>";
-            echo $row["sensor"] . " " . $row["medida"] . "<br>";
+            echo "<b>SENSOR</b>" . " " . "<b>MEDIDA</b>" . "<b>TIEMPO</b>" . "<br>";
+            echo $row["sensor"] . " " . $row["medida"] . " " . $row["tiempo"] . "<br>";
         }
     } else {
-        echo "No se encontraron resultados";
+        echo "<h2> No se encontraron resultados </h2>";
     }
 
     $con->close();
