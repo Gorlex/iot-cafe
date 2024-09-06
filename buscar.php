@@ -17,12 +17,14 @@
        
           echo  "<table>";
           echo      "<tr>";
+          echo          "<th>ID</th>";
           echo          "<th>SENSOR</th>";
           echo          "<th>MEDIDA</th>";
           echo          "<th>TIEMPO</th>";
           echo      "</tr>";
 
           echo      "<tr>";
+          echo    "<td>" . $row["id"] . "</td>";
           echo    "<td>" . $row["sensor"] . "</td>";
           echo    "<td>" . $row["medida"] . "</td>";
           echo    "<td>" . $row["tiempo"] . "</td>";
