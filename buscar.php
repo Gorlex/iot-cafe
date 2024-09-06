@@ -31,6 +31,10 @@
          
      </head>
      <body>
-         <button onclick=window.location.href="consulta-datos.html"><-- Regresar</button> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <button onclick=window.location.href="consulta-datos.html"><-- Regresar</button> 
      </body>
 </html> 
