@@ -31,8 +31,6 @@
          
      </head>
      <body>
-         <h1>Regresar</h1>
-        
-         <button onclick="history.back();">VOLVER</button> 
+         <button onclick=window.location.href="consulta-datos.html"><-- Regresar</button> 
      </body>
 </html> 
