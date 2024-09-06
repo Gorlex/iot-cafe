@@ -3,7 +3,7 @@
     include("conec.php");
         
     $busqueda = $_GET['busqueda'];
-    $tabla='temperatura';
+    $tabla== $_GET['tabla'];
 
 
     $consulta = "SELECT * FROM  $tabla WHERE id LIKE '%" . $busqueda . "%'";
