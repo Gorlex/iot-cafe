@@ -4,7 +4,8 @@
         
     $busqueda = $_GET['busqueda'];
     $tabla== $_GET['tabla'];
-
+echo $busqueda;
+echo $tabla;
 
     $consulta = "SELECT * FROM  $tabla WHERE id LIKE '%" . $busqueda . "%'";
     $result = $con->query($consulta);
