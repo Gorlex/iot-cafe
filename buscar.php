@@ -12,7 +12,7 @@
     // Mostrar los resultados
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "<b>sensor</b>" . " " . "<b>medida</b>" . "<br>";
+            echo "<b>SENSOR</b>" . " " . "<b>MEDIDA</b>" . "<br>";
             echo $row["sensor"] . " " . $row["medida"] . "<br>";
         }
     } else {
